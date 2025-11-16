@@ -1,11 +1,14 @@
-title: "Mukul Singh | Data Analyst Portfolio"
-description: "Data Analyst Portfolio showcasing Power BI, SQL, Excel automation and analytics projects."
-theme: minimal-mistakes-jekyll
-markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
 
 # Enable Plugins
 plugins:
   - jekyll-include-cache
+  - jekyll-remote-theme
+
+title: "Mukul Singh | Data Analyst Portfolio"
+description: "Data Analyst Portfolio showcasing Power BI, SQL, Excel automation and analytics projects."
+theme: minimal-mistakes-jekyll
+markdown: kramdown
 
 # Theme Settings
 minimal_mistakes_skin: "default" # Light Theme
@@ -39,3 +42,4 @@ nav:
     url: /certifications
   - title: "Contact"
     url: /contact
+
