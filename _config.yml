@@ -1,0 +1,41 @@
+title: "Mukul Singh | Data Analyst Portfolio"
+description: "Data Analyst Portfolio showcasing Power BI, SQL, Excel automation and analytics projects."
+theme: minimal-mistakes-jekyll
+markdown: kramdown
+
+# Enable Plugins
+plugins:
+  - jekyll-include-cache
+
+# Theme Settings
+minimal_mistakes_skin: "default" # Light Theme
+
+# Site Author Info
+author:
+  name: "Mukul Singh"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Data Analyst | Power BI | SQL | Excel (VBA, Power Query)"
+  location: "India"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/mr-mukul-singh/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/dakshMukul"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:Dakshmukul15@gmail.com"
+
+# Navigation Menu
+nav:
+  - title: "Home"
+    url: /
+  - title: "Projects"
+    url: /projects
+  - title: "Skills"
+    url: /skills
+  - title: "Certifications"
+    url: /certifications
+  - title: "Contact"
+    url: /contact
