@@ -1,23 +1,25 @@
-remote_theme: mmistakes/minimal-mistakes
+title: "Mukul Singh | Data Analyst Portfolio"
+description: "Power BI, SQL, Excel Automation and Analytics Projects Portfolio."
 
-# Enable Plugins
+# Use Minimal Mistakes as a Remote Theme (Correct)
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Markdown Processor
+markdown: kramdown
+
+# Plugins allowed on GitHub Pages
 plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
-title: "Mukul Singh | Data Analyst Portfolio"
-description: "Data Analyst Portfolio showcasing Power BI, SQL, Excel automation and analytics projects."
-theme: minimal-mistakes-jekyll
-markdown: kramdown
+# Light Mode Skin
+minimal_mistakes_skin: "default"
 
-# Theme Settings
-minimal_mistakes_skin: "default" # Light Theme
-
-# Site Author Info
+# Author Profile
 author:
   name: "Mukul Singh"
   avatar: "/assets/images/profile.jpg"
-  bio: "Data Analyst | Power BI | SQL | Excel (VBA, Power Query)"
+  bio: "Data Analyst | Power BI • SQL • Excel (VBA, Power Query)"
   location: "India"
   links:
     - label: "LinkedIn"
@@ -42,4 +44,3 @@ nav:
     url: /certifications
   - title: "Contact"
     url: /contact
-
