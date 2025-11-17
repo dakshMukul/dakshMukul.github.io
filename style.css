@@ -1,0 +1,288 @@
+/* --- GLOBAL STYLES --- */
+:root {
+    /* Define primary colors for the background gradient */
+    --color-primary-blue: #007bff;
+    --color-secondary-teal: #00a69a;
+    --color-accent: #28a745; /* Used for checkmark/success indicators */
+    --color-text-dark: #333;
+    --color-text-light: #555;
+    --color-button-border: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a modern, readable font */
+    line-height: 1.6;
+    color: var(--color-text-dark);
+}
+
+/* --- BACKGROUND GRADIENT --- */
+.background-gradient {
+    min-height: 100vh;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    /* Create the distinct two-color gradient look */
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background-attachment: fixed; /* Optional: keeps gradient fixed during scroll */
+}
+
+/* --- MAIN PORTFOLIO CARD CONTAINER --- */
+.portfolio-container {
+    width: 100%;
+    max-width: 800px; /* Width similar to the video display */
+    background: white;
+    padding: 40px;
+    border-radius: 15px; /* Subtle rounding */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --- INTRO SECTION STYLING --- */
+.intro-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image perfectly round */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--color-primary-blue);
+}
+
+.titles {
+    color: var(--color-text-light);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.transition-line {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.checkmark {
+    color: var(--color-accent);
+    margin-right: 5px;
+}
+
+.inline-skills span {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 5px 3px;
+    font-weight: 500;
+}
+
+.location-hobbies {
+    font-size: 0.9em;
+    color: var(--color-text-light);
+    margin: 15px 0 25px 0;
+}
+
+/* --- SOCIAL ICONS --- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.linkedin { background-color: #0077B5; }
+.github { background-color: #333; }
+.email { background-color: #D44638; }
+.contact-plus { background-color: var(--color-secondary-teal); }
+
+.icon-link:hover {
+    opacity: 0.8;
+}
+
+/* --- NAVIGATION BUTTONS --- */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-button-border);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-text-dark);
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0;
+}
+
+/* --- SKILLS SECTION STYLING --- */
+.skills-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    text-align: center;
+    width: 100px;
+}
+
+.skill-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 5px;
+}
+
+/* --- PROJECTS SECTION STYLING --- */
+.projects-section {
+    margin-top: 40px;
+}
+
+.projects-section h2 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.project-card {
+    display: flex;
+    align-items: flex-start; /* Aligns content to the top */
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.project-content {
+    flex: 2; /* Takes up more space */
+}
+
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.project-type {
+    font-size: 0.9em;
+    color: var(--color-secondary-teal);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-content ul {
+    margin-left: 20px;
+    padding-left: 0;
+    font-size: 0.95em;
+    list-style-type: '◼ '; /* Custom list style for the squares */
+}
+
+.project-content li {
+    margin-bottom: 5px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    border: 1px solid var(--color-text-dark);
+    padding: 8px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: var(--color-text-dark);
+    color: white;
+}
+
+.project-image {
+    flex: 1; /* Takes up less space than content */
+    max-width: 250px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* --- MEDIA QUERIES for Responsiveness (Mobile View) --- */
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 20px;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .project-card {
+        flex-direction: column; /* Stacks image and text vertically */
+        text-align: center;
+    }
+
+    .project-image {
+        order: -1; /* Puts the image at the top on mobile */
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .project-content ul {
+        text-align: left;
+        list-style-position: inside;
+    }
+}
