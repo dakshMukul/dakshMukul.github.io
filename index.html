@@ -9,29 +9,37 @@
 </head>
 <body>
 
+    <nav class="sticky-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <div class="background-gradient">
         <div class="portfolio-container">
 
             <header class="intro-section">
-                <img src="/Profile pic.jpeg" alt="Your Name Profile Picture" class="profile-photo">
-                <h1>👋 Hi, I'm Mukul Singh</h1>
-                <p class="titles">Data Analyst | AWS Cloud Practicner</p>
+                <img src="your-photo.jpg" alt="Your Name Profile Picture" class="profile-photo">
+                <h1>👋 Hi, I'm [Your Name]</h1>
+                <p class="titles">Data Analyst | Business Analyst | BI Engineer</p>
 
-                <!-- <p class="transition-line">
+                <p class="transition-line">
                     <i class="fas fa-check-circle checkmark"></i> [Your Previous Role] Turned Data Analyst
-                </p> -->
+                </p>
 
-                <!-- <div class="inline-skills">
+                <div class="inline-skills">
                     <span>📊 Tableau</span>
                     <span>📈 Excel</span>
                     <span>💾 SQL</span>
                     <span>🐍 Python R</span>
-                </div> -->
+                </div>
 
                 <p class="location-hobbies">
-                    📍 [New Delhi, India]
+                    📍 [Your City, State, Country]
                     <br>
-                    <span class="hobbies">Chess, Book reading, Trading</span>
+                    <span class="hobbies">Hiking, Running, Biking</span>
                 </p>
 
                 <div class="social-icons">
@@ -50,9 +58,19 @@
 
             <hr>
 
-            <section class="skills-section">
+            <section id="about" class="about-me-section">
+                <h2>About Me & My Data Journey</h2>
+                <div class="about-content">
+                    <p>My background as a **[Your Previous Role]** taught me the importance of detailed observation, systematic problem-solving, and precise reporting. This foundation naturally led me to the field of Data Analytics, where I use data to transform complex problems into actionable insights.</p>
+                    <p>I specialize in bridging the gap between raw data and business strategy. My core focus is on **Exploratory Data Analysis (EDA)**, creating compelling **Tableau/Power BI dashboards**, and automating reporting using **SQL and Python**.</p>
+                    <p>I am actively seeking an entry-level Data Analyst role where I can apply my technical skills and analytical mindset to drive measurable results.</p>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="skills" class="skills-section">
                 <h2>Technical Skills</h2>
-                
                 <div class="skill-grid">
                     <div class="skill-item">
                         <img src="https://img.icons8.com/color/48/000000/ms-excel.png" alt="Excel Icon"/>
@@ -79,9 +97,31 @@
 
             <hr>
 
-            <section id="projects" class="projects-section">
-                <h2>Projects</h2>   
+            <section id="certifications" class="certifications-section">
+                <h2>Certifications & Education</h2>
+                <div class="certification-list">
+                    <div class="cert-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p><strong>Google Data Analytics Professional Certificate</strong> - Coursera</p>
+                        <span>[Date Completed]</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-award"></i>
+                        <p><strong>Tableau Desktop Specialist Certification</strong> - Tableau</p>
+                        <span>[Date Completed]</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-university"></i>
+                        <p><strong>[Your Degree]</strong> - [Your University]</p>
+                        <span>[Year]</span>
+                    </div>
+                </div>
+            </section>
 
+            <hr>
+
+            <section id="projects" class="projects-section">
+                <h2>Projects</h2>
                 <div class="project-card">
                     <div class="project-content">
                         <h3>🍔 DoorDash Marketing Project</h3>
@@ -97,24 +137,30 @@
                         <img src="project-image-1.jpg" alt="DoorDash Project Mockup">
                     </div>
                 </div>
+                </section>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>🏫 Evaluating School Success with Tableau Project</h3>
-                        <p class="project-type">◼ Tableau | Data Visualization</p>
-                        <ul>
-                            <li>Created dashboard evaluating 1,800 different schools.</li>
-                            <li>Used Scatter Plots, KPIs, Bar Plots, & Area charts to show performance differences.</li>
-                            <li>Presented dashboard to stakeholders via recorded video.</li>
-                        </ul>
-                        <a href="#" class="read-more-btn">READ MORE</a>
-                    </div>
-                    <div class="project-image">
-                        <img src="project-image-2.jpg" alt="School Project Mockup">
-                    </div>
-                </div>
+            <hr>
+
+            <section id="contact" class="contact-section">
+                <h2>Get In Touch</h2>
+                <p>I am currently open to new opportunities and excited to discuss how my data analysis skills can benefit your team. Feel free to connect!</p>
                 
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> your.email@example.com
+                    </a>
+                    <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                    <a href="tel:your-phone-number" class="contact-link">
+                        <i class="fas fa-phone"></i> [Your Phone Number]
+                    </a>
+                </div>
             </section>
+
+            <footer class="footer">
+                <p>&copy; 2025 [Your Name]. Built with HTML & CSS on GitHub Pages.</p>
+            </footer>
 
         </div>
     </div>
